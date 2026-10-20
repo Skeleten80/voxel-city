@@ -11,7 +11,8 @@ import random
 from mathutils import Vector
 
 # ---------------------------------------------------------------- config
-OUT_DIR = os.path.expanduser("~/workspace/voxel-city")
+# Write outputs next to this script (was hardcoded to ~/workspace/voxel-city)
+OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 RENDER_DIR = os.path.join(OUT_DIR, "renders")
 os.makedirs(RENDER_DIR, exist_ok=True)
 
